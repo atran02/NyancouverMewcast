@@ -15,7 +15,7 @@ export default function Home() {
   const url = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&units=${units}&appid=${apiKey}`
 
   const [data, setData] = useState();
-  const grabWeather = useRef(false);
+  const grabWeather = useRef(true);
 
   const fetchWeather = async()=>{
     const response = await axios.get(url);
