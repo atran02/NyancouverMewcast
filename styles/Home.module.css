@@ -3,8 +3,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 4rem;
   min-height: 100vh;
+  background-color: #FEF9ED;
 }
 
 .description {
@@ -29,9 +30,18 @@
   position: relative;
   margin: 0;
   padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
+  background-color: rgba(255, 255, 255, 0.295);
+  border: 2px dashed #eb5e5e63;
+  border-radius: 1.3em;
+  color: #EB5E5E;
+}
+.description p:hover {
+
+  background-color: rgba((255,255,255), 0.5);
+  border: 2px solid #EB5E5E;
+
+  box-shadow: 2px 2px 0px 2px  #EB5E5E;
+  background-color: white;
 }
 
 .code {
@@ -40,11 +50,24 @@
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  width: var(--max-width);
+  display: flex;
+  /* grid-template-columns: repeat(6, minmax(20%, auto)); */
+  /* width: var(--max-width); */
   max-width: 100%;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
 }
+
+/* .grid div{
+      border: 3px solid #EF9771;
+    border-radius: 1.3em;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    background-color: white;
+} */
 
 .card {
   padding: 1rem 1.2rem;
@@ -275,4 +298,50 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+.wCard{
+    border: 3px solid #EF9771;
+    border-radius: 1.3em;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    background-color: #ffff;
+    margin: 1em;
+    
+}
+
+ .wCard:hover{
+  border-bottom: 10px solid #EF9771;
+ }
+
+.iCont{
+  display: flex;
+  justify-content: center;
+}
+
+.wNum{
+  color: #EB5E5E;
+  font-size: 2rem;
+  font-weight: 600
+}
+
+.wType{
+  color: #fd8888;
+  font-size: 1rem;
+  font-weight: 600;
+  padding-bottom: 0.5em;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  display: flex;
+  flex: 1;
+  padding: 1em 0;
+  justify-content: center;
+  background-color: #EB5E5E;
+  color: #ffff;
 }
